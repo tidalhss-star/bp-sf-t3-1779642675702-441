@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[마포 PBN 빌더]]></title>
-  <link>https://sf-t3-1779642675702-441.pages.dev</link>
-  <description><![CDATA[마포 서버 웜업 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-  <language>ko-KR</language>
-  <pubDate>Thu, 28 May 2026 13:26:50 GMT</pubDate>
-  <lastBuildDate>Thu, 28 May 2026 13:26:50 GMT</lastBuildDate>
-  <atom:link href="https://sf-t3-1779642675702-441.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
+  <title><![CDATA[서버 웜업]]></title>
+  <link>https://tidalhss-star.github.io/bp-sf-t3-1779642675702-441</link>
+  <description><![CDATA[서버 웜업 - PBN 빌더 관련 최신 소식 및 가이드]]></description>
+  <language>ko</language>
+  <pubDate>Wed, 10 Jun 2026 19:48:40 GMT</pubDate>
+  <lastBuildDate>Wed, 10 Jun 2026 19:48:40 GMT</lastBuildDate>
+  <atom:link href="https://tidalhss-star.github.io/bp-sf-t3-1779642675702-441/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[마포 PBN 빌더 - 공식 홈페이지 오픈 안내]]></title>
-      <link>https://sf-t3-1779642675702-441.pages.dev/</link>
-      <guid isPermaLink="true">https://sf-t3-1779642675702-441.pages.dev/</guid>
-      <description><![CDATA[마포 서버 웜업 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-      <pubDate>Thu, 28 May 2026 13:26:50 GMT</pubDate>
+      <title><![CDATA[PBN 빌더 현장에서 놓치기 쉬운 포인트를 기록해봤다]]></title>
+      <link>https://tidalhss-star.github.io/bp-sf-t3-1779642675702-441/posts/field_note-002-kyi47l.html</link>
+      <guid isPermaLink="true">https://tidalhss-star.github.io/bp-sf-t3-1779642675702-441/posts/field_note-002-kyi47l.html</guid>
+      <description><![CDATA[### 제목: 창작한 제목 아, 진짜... 글룸헤이븐 1판과 2판 사이에 변경된 클래스 카드 7종의 정확한 스탯 차이와 밸런스 변경 이유를 분석해보겠습니다. #### 구체적 맥락보드게임 희귀 에디션·룰 차이 / 아컴 호러 카드 에라타 --- ##### 관찰 기록 1. ]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[PBN 빌더 솔직 후기 — 3개월 써본 사람의 리얼 리뷰]]></title>
+      <link>https://tidalhss-star.github.io/bp-sf-t3-1779642675702-441/posts/review-001-kyi47l.html</link>
+      <guid isPermaLink="true">https://tidalhss-star.github.io/bp-sf-t3-1779642675702-441/posts/review-001-kyi47l.html</guid>
+      <description><![CDATA[### 포스트 DNA 1bd07a49 **제목: 창작한 제목** "엘든링 미사용 보스 데이터 마이닝 패턴: 실패 사례를 통해 배우는 재발 방지 원칙" #### 에필로그 "아, 진짜... 엘든링에서 미사용 보스 3종은 특별한 패턴을 가지고 있습니다. 이 글에서는 그들의 ]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
     </item>
 </channel>
 </rss>
