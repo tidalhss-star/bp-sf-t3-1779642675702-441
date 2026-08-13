@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · sf-t3-1779642675702-441</title>
+  <meta name="description" content="sf-t3-1779642675702-441에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sf-t3-1779642675702-441.maphoshirts.today/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* ===== RESET & BASE ===== */
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ font-size: 16px;
+ scroll-behavior: smooth;
+ }
+ body {
+ font-family: Impact, system-ui, sans-serif;
+ background: #000;
+ color: #fff;
+ line-height: 1.3;
+ min-height: 100vh;
+ overflow-x: hidden;
+ }
+ a {
+ color: inherit;
+ text-decoration: none;
+ }
+ ul {
+ list-style: none;
+ }
+ img {
+ max-width: 100%;
+ display: block;
+ }
+ /* ===== TYPOGRAPHY ===== */
+ h1, h2, h3, h4 {
+ font-weight: 400;
+ text-transform: uppercase;
+ letter-spacing: -0.02em;
+ }
+ h1 {
+ font-size: clamp(3.5rem, 12vw, 7rem);
+ line-height: 0.9;
+ margin-bottom: 0.5rem;
+ }
+ h2 {
+ font-size: clamp(2.5rem, 8vw, 5rem);
+ border-bottom: 4px solid #ff3b00;
+ display: inline-block;
+ padding-bottom: 4px;
+ margin-bottom: 1.5rem;
+ }
+ h3 {
+ font-size: 1.8rem;
+ }
+ p {
+ font-size: 1.2rem;
+ max-width: 70ch;
+ margin: 1rem 0;
+ }
+ /* ===== LAYOUT – full bleed ===== */
+ .container {
+ max-width: none;
+ padding: 72px;
+ }
+ @media (max-width: 768px) {
+ .container {
+ padding: 32px;
+ }
+ }
+ .section {
+ margin-bottom: 120px;
+ }
+ .section:last-of-type {
+ margin-bottom: 0;
+ }
+ .flex-row {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 48px;
+ }
+ /* ===== BRUTALIST ELEMENTS ===== */
+ .border-accent {
+ border: 4px solid #ff3b00;
+ }
+ .bg-accent {
+ background: #ff3b00;
+ color: #000;
+ }
+ .skew-left {
+ transform: skewX(-3deg);
+ }
+ .skew-right {
+ transform: skewX(3deg);
+ }
+ .rotate-neg {
+ transform: rotate(-1deg);
+ }
+ .negative-margin {
+ margin-left: -40px;
+ margin-right: -40px;
+ }
+ @media (max-width: 768px) {
+ .negative-margin {
+ margin-left: -16px;
+ margin-right: -16px;
+ }
+ }
+ .text-accent {
+ color: #ff3b00;
+ }
+ .text-outline {
+ -webkit-text-stroke: 2px #ff3b00;
+ color: transparent;
+ }
+ /* ===== HEADER ===== */
+ header {
+ padding: 24px 72px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ border-bottom: 4px solid #ff3b00;
+ background: #000;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
+ @media (max-width: 768px) {
+ header {
+ padding: 16px 32px;
+ }
+ }
+ .logo {
+ font-size: 2.2rem;
+ letter-spacing: 0.05em;
+ }
+ .logo span {
+ color: #ff3b00;
+ }
+ nav ul {
+ display: flex;
+ gap: 36px;
+ font-size: 1.3rem;
+ text-transform: uppercase;
+ }
+ nav a:hover {
+ color: #ff3b00;
+ text-decoration: underline;
+ text-decoration-thickness: 3px;
+ }
+ /* Hamburger */
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ gap: 6px;
+ cursor: pointer;
+ background: none;
+ border: none;
+ padding: 4px;
+ }
+ .hamburger span {
+ display: block;
+ width: 32px;
+ height: 4px;
+ background: #fff;
+ transition: 0.2s;
+ }
+ #nav-toggle {
+ display: none;
+ }
+ @media (max-width: 768px) {
+ nav ul {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ right: 0;
+ background: #000;
+ border-bottom: 4px solid #ff3b00;
+ padding: 24px 32px;
+ gap: 20px;
+ }
+ .hamburger {
+ display: flex;
+ }
+ #nav-toggle:checked ~ nav ul {
+ display: flex;
+ }
+ }
+ /* ===== HERO ===== */
+ .hero {
+ padding: 120px 72px 80px;
+ border-bottom: 4px solid #ff3b00;
+ position: relative;
+ overflow: hidden;
+ }
+ .hero::before {
+ content: "";
+ position: absolute;
+ top: -20%;
+ right: -10%;
+ width: 500px;
+ height: 500px;
+ background: repeating-linear-gradient(
+ 45deg,
+ #ff3b00 0px,
+ #ff3b00 8px,
+ transparent 8px,
+ transparent 16px
+ );
+ opacity: 0.15;
+ transform: rotate(12deg);
+ pointer-events: none;
+ }
+ .hero-content {
+ position: relative;
+ z-index: 1;
+ }
+ .hero h1 {
+ font-size: clamp(4rem, 14vw, 8rem);
+ line-height: 0.85;
+ margin-bottom: 0.2em;
+ }
+ .hero .subtitle {
+ font-size: 1.8rem;
+ margin: 0.5rem 0 1.5rem;
+ display: inline-block;
+ border-left: 8px solid #ff3b00;
+ padding-left: 20px;
+ }
+ .hero .cta {
+ display: inline-block;
+ padding: 16px 48px;
+ font-size: 1.8rem;
+ background: #ff3b00;
+ color: #000;
+ border: 4px solid #fff;
+ text-transform: uppercase;
+ transition: 0.1s linear;
+ margin-top: 1rem;
+ }
+ .hero .cta:hover {
+ background: #000;
+ color: #ff3b00;
+ border-color: #ff3b00;
+ }
+ @media (max-width: 768px) {
+ .hero {
+ padding: 80px 32px 60px;
+ }
+ }
+ /* ===== SECTIONS ===== */
+ .about-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 48px;
+ }
+ @media (max-width: 768px) {
+ .about-grid {
+ grid-template-columns: 1fr;
+ }
+ }
+ .about-grid .block {
+ padding: 40px;
+ border: 4px solid #ff3b00;
+ background: #111;
+ }
+ .about-grid .block:nth-child(2) {
+ margin-top: -40px;
+ transform: rotate(-1deg);
+ }
+ @media (max-width: 768px) {
+ .about-grid .block:nth-child(2) {
+ margin-top: 0;
+ transform: none;
+ }
+ }
+ .about-grid .block h3 {
+ font-size: 2.5rem;
+ margin-bottom: 1rem;
+ border-bottom: 4px solid #ff3b00;
+ display: inline-block;
+ }
+ .about-grid .block p {
+ font-size: 1.2rem;
+ }
+ .emoji-icon {
+ font-size: 4rem;
+ display: block;
+ margin-bottom: 0.5rem;
+ }
+ /* ===== REVIEWS ===== */
+ .reviews-grid {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 48px;
+ }
+ @media (max-width: 900px) {
+ .reviews-grid {
+ grid-template-columns: 1fr 1fr;
+ }
+ }
+ @media (max-width: 600px) {
+ .reviews-grid {
+ grid-template-columns: 1fr;
+ }
+ }
+ .review-card {
+ background: #111;
+ border: 4px solid #fff;
+ padding: 32px;
+ position: relative;
+ transition: 0.1s linear;
+ }
+ .review-card:hover {
+ border-color: #ff3b00;
+ transform: scale(1.02);
+ }
+ .review-card .stars {
+ font-size: 1.8rem;
+ color: #ff3b00;
+ letter-spacing: 4px;
+ }
+ .review-card .nick {
+ font-size: 1.4rem;
+ font-weight: bold;
+ margin-top: 0.8rem;
+ }
+ .review-card .date {
+ font-size: 0.9rem;
+ color: #888;
+ margin-bottom: 0.5rem;
+ }
+ .review-card .text {
+ font-size: 1.1rem;
+ margin-top: 0.5rem;
+ border-top: 2px solid #333;
+ padding-top: 0.8rem;
+ }
+ /* ===== FOOTER ===== */
+ footer {
+ border-top: 4px solid #ff3b00;
+ padding: 48px 72px;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ gap: 24px;
+ }
+ footer .copy {
+ font-size: 1rem;
+ opacity: 0.8;
+ }
+ footer .phone {
+ font-size: 1.6rem;
+ border: 2px solid #fff;
+ padding: 8px 24px;
+ display: inline-block;
+ }
+ footer .phone:hover {
+ border-color: #ff3b00;
+ color: #ff3b00;
+ }
+ @media (max-width: 768px) {
+ footer {
+ flex-direction: column;
+ text-align: center;
+ padding: 32px;
+ }
+ }
+ /* ===== UTILITY ===== */
+ .text-right {
+ text-align: right;
+ }
+ .mt-2 {
+ margin-top: 2rem;
+ }
+ .mb-2 {
+ margin-bottom: 2rem;
+ }
+ .no-wrap {
+ white-space: nowrap;
+ }
+ /* brutalist texture on some blocks */
+ .texture-dots {
+ background-image: radial-gradient(circle, #ff3b00 1px, transparent 1px);
+ background-size: 12px 12px;
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · sf-t3-1779642675702-441">
+  <meta property="og:description" content="sf-t3-1779642675702-441에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sf-t3-1779642675702-441.maphoshirts.today/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="logo">
+ 마포<span>웜업</span>
+ </div>
+ <input type="checkbox" id="nav-toggle" hidden>
+ <label for="nav-toggle" class="hamburger" aria-label="메뉴 열기">
+ 
+ 
+ 
+ </label>
+ <nav>
+ <ul>
+ <li><a href="#home">홈</a></li>
+ <li><a href="#about">소개</a></li>
+ <li><a href="#reviews">리뷰</a></li>
+ 
+ </ul>
+ </nav>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 33개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0457.html">PBN 빌더 활용 시 마포 코인노래방 방음 시설 비교 가이드 확인법</a>
+        <p class="post-item__summary">마포 지역에서 코인노래방을 이용하려는 초행자가 가장 먼저 고려해야 할 요소는 시설의 정숙성입니다. 옆 방의 노랫소리가 섞이지 않는 쾌적한 환경을 원한다면 입구부터 방음 설계를 세심하게 살피는 것이 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0111.html">PBN 빌더 활용 시 주의할 공덕 셔츠룸 추천정보 예약팁</a>
+        <p class="post-item__summary">최근 정보 검색 과정에서 PBN 빌더 방식을 통한 광고 노출이 흔해지면서 실제 양질의 정보를 걸러내는 능력이 중요해졌습니다. 많은 사용자가 공덕 지역의 시설을 검색할 때 무작위로 뜨는 광고 페이지에</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0112.html">PBN 빌더가 알리는 연남 유흥 추천정보 확인 항목</a>
+        <p class="post-item__summary">온라인에서 정보를 검색하다 보면 PBN 빌더 시스템으로 생성된 다양한 게시물을 마주하게 됩니다. 연남 지역의 분위기 좋은 곳을 찾을 때 이러한 정보들 사이에서 어떤 곳이 정말 괜찮은지 판별하는 것은</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0113.html">PBN 빌더 활용 전략과 현명한 마곡 가라오케 추천정보 확인법</a>
+        <p class="post-item__summary">갑작스러운 비즈니스 접대 자리가 잡히면 가장 먼저 장소 선정 문제로 고민에 빠지게 됩니다. 특히 평소 가보지 않았던 새로운 지역에서 시간을 보내야 한다면 더욱 신중한 접근이 필요합니다. 디지털 마케</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0114.html">PBN 빌더로 알아보는 마곡 유흥 추천정보와 시간대 선택의 기술</a>
+        <p class="post-item__summary">흔히 대중은 유흥 문화가 무조건 늦은 밤에만 활성화된다고 오해하곤 합니다. 하지만 마곡과 같은 신흥 업무 지구에서는 퇴근 직후의 초저녁 시간대가 오히려 쾌적하고 집중적인 대화를 나누기에 적합한 경우</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0115.html">PBN 빌더 기반의 합정 노래방 추천정보와 인원별 공간 구성</a>
+        <p class="post-item__summary">노래방을 선택할 때 사람들은 음향 시스템의 상태, 룸의 크기, 그리고 주변 시설의 편의성을 가장 중요한 충족 조건으로 꼽습니다. PBN 빌더가 다양한 노드들을 연결해 최상의 결과값을 도출하는 것처럼</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0116.html">PBN 빌더 관점에서 본 연남 클럽 추천정보 및 업체 비교 기준</a>
+        <p class="post-item__summary">여러분은 평소 여가 시간을 보낼 장소를 선택할 때 어떤 기준을 가장 먼저 고려하시나요? PBN 빌더가 웹사이트의 가치를 높이기 위해 여러 요소를 신중하게 조합하는 것처럼, 좋은 클럽을 찾기 위해서도</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0117.html">PBN 빌더 활용하는 합정 셔츠룸 추천정보 선택 가이드</a>
+        <p class="post-item__summary">디지털 환경에서 정보를 선별하는 방식이 오프라인 서비스 선택에도 적용되고 있습니다. 마치 PBN 빌더를 통해 콘텐츠의 가치를 구축하듯, 방문객들은 신뢰할 수 있는 데이터를 바탕으로 합정 지역의 유흥</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0118.html">PBN 빌더 기반의 공덕 가라오케 추천정보 가격 비교법</a>
+        <p class="post-item__summary">검색 엔진의 최적화 원리인 PBN 빌더 개념은 정보의 구조를 파악하는 데 유용합니다. 공덕 일대에서 가라오케를 선택할 때도 이처럼 체계적인 기준을 가지고 접근해야 합니다. 특히 가격과 서비스의 상관</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0119.html">PBN 빌더 없이 실패하는 상수 마사지 추천정보와 예방법</a>
+        <p class="post-item__summary">디지털 마케팅의 PBN 빌더가 웹사이트의 안정성을 구축하듯, 마사지 숍 역시 예약 프로세스가 안정적이어야 신뢰를 줍니다. 많은 이용자가 실패를 경험하는 지점은 준비되지 않은 상태에서 방문하거나, 정</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0120.html">PBN 빌더 분석 기반의 망원 노래방 추천정보 접근 체크리스트</a>
+        <p class="post-item__summary">데이터의 연결성을 중요시하는 PBN 빌더의 구조적 분석은 지역 정보 탐색에도 유효합니다. 망원 지역의 노래방을 고를 때 위치와 접근성은 이용 만족도를 결정짓는 결정적 요소입니다. 성공적인 여가를 위</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0121.html">PBN 빌더 활용 전략으로 확인하는 홍대 노래방 추천정보 및 이용 가이드</a>
+        <p class="post-item__summary">복잡한 번화가에서 갑자기 마이크를 잡고 싶어질 때가 있습니다. 최근 디지털 마케팅 분석에서 다뤄지는 PBN 빌더 이론을 적용해 정보를 찾는 것처럼, 홍대 노래방 추천정보 역시 체계적인 접근이 필요합</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/review-001-kyi47l.html">PBN 빌더 솔직 후기</a>
+        <p class="post-item__summary">온라인 마케팅과 검색 엔진 최적화 분야에서 서버 웜업은 안정적인 운영을 위한 필수 과정입니다. 최근 많은 마케터가 주목하는 PBN 빌더는 이러한 웜업 단계를 더욱 체계적으로 관리할 수 있도록 돕는 </p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
